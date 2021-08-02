@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    app:cardCornerRadius="5dp"
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#282a36"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_title"
+            android:textColorHint="@color/white"
+            android:textColor="#bd93f9"
+            android:hint="Title"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/amountSpent"
+            android:drawableLeft="@drawable/ic_money"
+            android:textColorHint="@color/white"
+            android:inputType="number"
+            android:textColor="#bd93f9"
+            android:textSize="18sp"
+            android:hint="Amount"></EditText>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/spinner"
+
+            ></Spinner>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

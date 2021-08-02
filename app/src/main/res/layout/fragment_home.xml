@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#44475a"
+        android:padding="5dp"
+        android:id="@+id/upper"
+        android:layout_height="250dp">
+
+        <TextView
+            android:id="@+id/dateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f1fa8c"
+            android:textSize="17sp"
+            android:text="13/11/2001"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Balance"
+            android:layout_above="@id/availableBalance"
+            android:layout_marginBottom="5dp"
+            android:textColorHint="@color/white"
+            android:layout_centerInParent="true"></TextView>
+        <TextView
+            android:id="@+id/availableBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#bd93f9"
+            android:textSize="30sp"
+            android:text="2500"></TextView>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/money"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"></ImageView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/dollar"
+            android:layout_alignParentRight="true" />
+
+        <Button
+            android:id="@+id/addMoneyBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_bg"
+            android:text="Add Money"
+            app:backgroundTint="#6272a4"></Button>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lower"
+        android:background="#282a36"
+        android:padding="5dp"
+        android:layout_below="@id/upper">
+
+        <Button
+            android:id="@+id/spendMoneyBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_bg"
+
+            android:text="Spend Money"
+            android:textColor="@color/black"
+            app:backgroundTint="#f1fa8c"></Button>
+
+        <org.eazegraph.lib.charts.PieChart
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            app:egLegendHeight="0sp"
+            app:egLegendTextSize="0sp"
+            app:egUsePieRotation="true"
+            app:egValueTextSize="0sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:egInnerPaddingColor="#8be9fd"
+            android:id="@+id/pieChart"></org.eazegraph.lib.charts.PieChart>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@android:color/holo_orange_dark"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:text="Food"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+
+                    android:textStyle="italic"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@android:color/holo_blue_dark"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:text="Electronics"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+
+                    android:textStyle="italic"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@android:color/holo_red_dark"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:text="Travelling"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+
+                    android:textStyle="italic"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@android:color/holo_green_dark"></View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:text="Other"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+
+                    android:textStyle="italic"></TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

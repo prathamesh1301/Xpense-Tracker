@@ -1,0 +1,2 @@
+rootProject.name = "Xpense Tracker"
+include ':app'

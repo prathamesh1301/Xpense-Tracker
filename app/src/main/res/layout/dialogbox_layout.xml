@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="#282a36"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/moneyInput"
+        android:textColorHint="@color/white"
+        android:textColor="#bd93f9"
+        android:drawableLeft="@drawable/ic_money"
+        android:inputType="number"
+        android:hint="Enter Money"></EditText>
+
+</LinearLayout>
